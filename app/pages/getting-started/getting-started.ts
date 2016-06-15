@@ -3,10 +3,11 @@ import {NavController} from 'ionic-angular';
 import {ScientificFactsPage} from '../scientific-facts-page/scientific-facts-page';
 
 @Component({
-  templateUrl: 'build/pages/home-page/home-page.html'
+  templateUrl: 'build/pages/getting-started/getting-started.html'
 })
-export class HomePage {
-  constructor(private _navController: NavController) {
+export class GettingStartedPage {
+
+  constructor(private _navController:NavController) {
   }
 
   goToFactsPage(){

@@ -8,6 +8,7 @@ import {SelectedFactPage} from '../selected-fact-page/selected-fact-page';
 export class ScientificFactsPage {
 
   private facts: string[];
+  
   constructor(private _navController: NavController) {
   }
 
