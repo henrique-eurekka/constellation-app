@@ -1,17 +1,20 @@
 import {Component, ViewChild} from '@angular/core';
 import {App, ionicBootstrap, Platform, Nav} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
-import {GettingStartedPage} from './pages/getting-started/getting-started';
+import {CapaPage} from './pages/capa/capa';
 import {ListPage} from './pages/list/list';
-
+import {EstrelasData} from './providers/estrelas';
 
 @Component({
-  templateUrl: 'build/app.html'
+  templateUrl: 'build/app.html',
+  providers: [
+    EstrelasData
+  ]
 })
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = GettingStartedPage;
+  rootPage: any = CapaPage;
   pages: Array<{title: string, component: any}>
 
   constructor(private platform: Platform) {
@@ -19,11 +22,11 @@ class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Desacelera', component: GettingStartedPage },
+      { title: 'Desacelera', component: CapaPage },
       { title: 'Durma Zen', component: ListPage },
-      { title: 'Fui-lá-e-fiz', component: GettingStartedPage },
-      { title: 'Radiante', component: GettingStartedPage },
-      { title: 'Não Esquenta', component: GettingStartedPage }
+      { title: 'Fui-lá-e-fiz', component: CapaPage },
+      { title: 'Radiante', component: CapaPage },
+      { title: 'Não Esquenta', component: CapaPage }
     ];
 
   }
