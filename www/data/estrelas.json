@@ -3,12 +3,32 @@
 		{
 			"nome": "DESACELERA",
 			"descricao": "Diminua sua ansiedade e reduza seu estresse.",
-			"image": "img/IFlTBKrQqSIJAFm40Ilg_logo.png"
+			"image": "img/IFlTBKrQqSIJAFm40Ilg_logo.png",
+			"link": "desacelera"
 		},
 		{
 			"nome": "DURMA ZEN",
 			"descricao": "Entre no estado perfeito para dormir.",
-			"image": "img/uFeeQOImQxKw6ZsHhQIK_durmazen.png"
+			"image": "img/uFeeQOImQxKw6ZsHhQIK_durmazen.png",
+			"link": "durmazen"
 		}
-	]
+	],
+	"desacelera" : {
+		"descricao": "Diminua sua ansiedade e reduza seu estresse.",
+		"image": "img/IFlTBKrQqSIJAFm40Ilg_logo.png",
+		"objetivo": "Redução da ansiedade, alívio do estresse, relaxamento.",
+		"quando": "Em qualquer momento de nervosismo, seja antes ou depois.",
+		"duracao": "De 5 a 8 minutos.",
+		"passos": [
+			{
+				"titulo": "Respire no ritmo da imagem abaixo:",
+				"conteudo": "Inspire e expire em sincronia com a animação, por no mínimo 60 segundos."
+			},
+			{
+				"titulo": "",
+				"midia": "",
+				"subtitulo": ""
+			}
+		]
+	}
 }

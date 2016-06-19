@@ -38,4 +38,10 @@ export class EstrelasData {
     });
   }
 
+  getTest(name) {
+    return this.load().then(data => {
+      return data[name];
+    });
+  }
+
 }
