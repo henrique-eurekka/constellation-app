@@ -22,8 +22,8 @@ class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Desacelera', component: CapaPage },
-      { title: 'Durma Zen', component: ListPage },
+      { title: 'Inicio', component: CapaPage },
+      { title: 'Configuracoes', component: ListPage },
       { title: 'Fui-lá-e-fiz', component: CapaPage },
       { title: 'Radiante', component: CapaPage },
       { title: 'Não Esquenta', component: CapaPage }

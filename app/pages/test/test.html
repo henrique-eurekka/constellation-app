@@ -3,7 +3,8 @@
 </ion-navbar>
 
 <ion-content padding>
-  <h2>You've selected:</h2>
-  <p>{{fact}}</p>
-  <button (click)="goBack()">Go Back</button>
+  	<h2>You've selected:</h2>
+  	<p [hidden]="estrela.descricao == null">{{estrela.descricao}}</p>
+	<button (click)="goPasso(1)" [hidden]="estrela.passos == null">Vai para Próximo Passo</button>
+	<button (click)="goBack()">Go Back</button>
 </ion-content>

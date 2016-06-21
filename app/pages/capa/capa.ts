@@ -12,13 +12,13 @@ export class CapaPage {
 
   constructor(private _navController:NavController, estrelas: EstrelasData) {
 
-	estrelas.getData().then(estrelas => {
+	estrelas.getListadeEstrelas().then(estrelas => {
     	this.items = estrelas;
 	});
 
   }
 
-  goToTest(test){
-    this._navController.push(TestPage, test);
+  goToTest(estrela){
+    this._navController.push(TestPage, estrela);
   }
 }

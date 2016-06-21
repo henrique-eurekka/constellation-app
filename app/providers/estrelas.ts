@@ -32,15 +32,15 @@ export class EstrelasData {
     return data;
   }
 
-  getData() {
+  getListadeEstrelas() {
     return this.load().then(data => {
       return data.estrelas;
     });
   }
 
-  getTest(name) {
-    return this.load().then(data => {
-      return data[name];
+  getEstrela(nomeEstrela) {
+    return this.load().then(estrelaJson => {
+      return estrelaJson[nomeEstrela];
     });
   }
 

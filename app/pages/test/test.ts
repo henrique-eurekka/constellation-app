@@ -7,13 +7,21 @@ import {EstrelasData} from '../../providers/estrelas';
 })
 export class TestPage {
 
-  private fact:any;
+  private estrela:any;
   
-  constructor(private _navController: NavController, private _navParams: NavParams, private estrelas: EstrelasData) {
-    this.fact = this._navParams.data.link;
-    estrelas.getTest(this.fact).then(test => {
-        this.fact = test.descricao;
+  constructor(
+    private _navController: NavController, 
+    private _navParams: NavParams, 
+    private estrelas: EstrelasData) {
+
+    this.estrela = {};
+    estrelas.getEstrela(this._navParams.data.link).then(estrela => {
+        this.estrela = estrela;
     });
+  }
+
+  goPasso(num){
+    this._navController.push(TestPage, this.estrela.passos[num]);
   }
 
   goBack(){
